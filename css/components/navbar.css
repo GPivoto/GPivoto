@@ -9,6 +9,46 @@
    
 }
 
+.color-span{
+    color: var(--tertiary-color);
+}
+
+.botao{
+    text-align: center;
+    margin-top: 50vh;
+}
+
+button{
+    background-color: var(--secondary-color);
+    padding: 16px 36px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@keyframes anima{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+button:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: var(--dark-secondary-color);
+    border: 2px solid var(--secondary-color);
+    
+}
+
 .name{
     font-size: 32px;
     font-weight: bold;
